@@ -4,14 +4,16 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel serve src/index.html",
+    "build": "parcel build src/index.html",
+    "watch": "nodemon --watch src --exec \"npm run dev\""
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "buffer": "^6.0.3",
+    "nodemon": "^3.1.7",
     "parcel": "^2.6.2",
     "typescript": "^5.7.2"
   },
